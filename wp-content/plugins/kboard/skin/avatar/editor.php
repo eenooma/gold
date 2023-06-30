@@ -3,9 +3,22 @@
 		<?php $skin->editorHeader($content, $board)?>
 		
 		<?php foreach($board->fields()->getSkinFields() as $key=>$field):?>
-			<?php echo $board->fields()->getTemplate($field, $content, $boardBuilder)?>
+			<?php if(!in_array($key, array('key1','before_value1','value1','key2','before_value2','value2','key3','before_value3','value3','key4','before_value4','value4','key5','before_value5','value5'))):?>
+				<?php echo $board->fields()->getTemplate($field, $content, $boardBuilder)?>
+			<?php elseif(in_array($key, array('key1','key2','key3','key4','key5'))):?>
+				<?php $i = str_replace('key', '', $key)?>
+						
+				<div class="kboard-attr-row kboard-attr-text meta-key-key<?php echo $i?>  ">
+					<label class="attr-name" for="key<?php echo $i?>"><span class="field-name"><?php echo $field['field_name']?></span></label>
+					<div class="attr-value">
+						<input type="text" id="key<?php echo $i?>" class="" name="kboard_option_key<?php echo $i?>" value="<?php echo esc_attr($content->option->{'key'.$i})?>">
+						<input type="text" id="before_value<?php echo $i?>" class="" name="kboard_option_before_value<?php echo $i?>" value="<?php echo esc_attr($content->option->{'before_value'.$i})?>">
+						<input type="text" id="value<?php echo $i?>" class="" name="kboard_option_value<?php echo $i?>" value="<?php echo esc_attr($content->option->{'value'.$i})?>">
+					</div>
+				</div>
+			<?php endif?>
 		<?php endforeach?>
-		
+
 		<div class="kboard-control">
 			<div class="left">
 				<?php if($content->uid):?>
