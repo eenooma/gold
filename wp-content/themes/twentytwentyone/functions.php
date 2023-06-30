@@ -776,3 +776,26 @@ function my_board_view($args) {
 	
 	return $field_html;
 }
+
+add_filter('kboard_after_executing_url', 'my_kboard_after_executing_url', 10, 3);
+function my_kboard_after_executing_url($next_page_url, $execute_uid, $board_id){
+	
+	if(in_array($board_id, array('4'))) {
+		$board = new KBoard($board_id);
+		$url = new KBUrl();
+		
+		$uid = isset($_POST['uid'])?intval($_POST['uid']):'';
+		
+		if($uid){
+			$next_page_url = $url->set('mod', 'list')->toString();
+		}
+		else if($board->isAdmin()){
+			$next_page_url = $url->set('uid', $execute_uid)->set('mod', 'document')->toString();
+		}
+		else{
+			$next_page_url = $url->set('mod', 'list')->toString();
+		}
+	}
+	
+	return $next_page_url;
+}
