@@ -1183,7 +1183,7 @@ input[type=color]:focus,
 	outline: 2px dotted var(--form--border-color);
 }
 
-input[type=text]:disabled,
+/*input[type=text]:disabled,
 input[type=email]:disabled,
 input[type=url]:disabled,
 input[type=password]:disabled,
@@ -1199,7 +1199,7 @@ input[type=datetime-local]:disabled,
 input[type=color]:disabled,
 .site textarea:disabled {
 	opacity: 0.7;
-}
+} 20230630*/
 
 .is-dark-theme input[type=text],
 .is-dark-theme input[type=email],
