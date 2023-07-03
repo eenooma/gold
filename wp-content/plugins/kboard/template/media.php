@@ -97,7 +97,7 @@
 		<?php echo __('업로드 버튼을 눌러 이미지 파일을 선택하면 이곳에 표시됩니다 :D', 'kboard')?><br>
 		
 		<?php if($board->contribution()):?>
-		<a class="kboard-media-poweredby" href="https://www.cosmosfarm.com/products/kboard" onclick="window.open(this.href);return false;" title="<?php echo __('KBoard is the best community software available for WordPress', 'kboard')?>">Powered by KBoard</a>
+		<a class="kboard-media-poweredby" href="https://www.cosmosfarm.com/products/kboard" onclick="window.open(this.href);return false;" title="<?php echo __('KBoard is the best community software available for WordPress', 'kboard')?>"></a>
 		<?php endif?>
 	</div>
 	<?php endif?>

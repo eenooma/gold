@@ -2,20 +2,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KBoard\n"
 "POT-Creation-Date: 2021-04-28 23:16+0900\n"
-"PO-Revision-Date: 2021-04-28 23:16+0900\n"
-"Last-Translator: Cosmosfarm <support@cosmosfarm.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2023-07-03 15:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: 한국어\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-KeywordsList: _;__;gettext;gettext_noop\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: ../kboard-comments\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.6.4; wp-6.2.2"
 
 #: addons/mycred.php:5
 msgid "KBoard 게시판 포인트"
@@ -702,7 +704,7 @@ msgstr "플러그인 찾기"
 #: skin/thumbnail/editor-fields.php:152 template/media.php:9
 #: template/media.php:69 template/skin/editor-fields.php:152
 msgid "KBoard Add Media"
-msgstr "KBoard 미디어 추가"
+msgstr "미디어 추가"
 
 #: index.php:233
 msgid "New Forum"
@@ -1249,12 +1251,8 @@ msgid "백업파일 다운로드"
 msgstr "백업파일 다운로드"
 
 #: pages/kboard_backup.php:27
-msgid ""
-"백업파일을 다운로드 받습니다. 파일은 xml 파일이며 복구하기를 통해 백업된 상태"
-"로 되돌릴 수 있습니다."
-msgstr ""
-"백업파일을 다운로드 받습니다. 파일은 xml 파일이며 복구하기를 통해 백업된 상태"
-"로 되돌릴 수 있습니다."
+msgid "백업파일을 다운로드 받습니다. 파일은 xml 파일이며 복구하기를 통해 백업된 상태로 되돌릴 수 있습니다."
+msgstr "백업파일을 다운로드 받습니다. 파일은 xml 파일이며 복구하기를 통해 백업된 상태로 되돌릴 수 있습니다."
 
 #: pages/kboard_backup.php:32
 msgid "백업파일 선택"
@@ -1265,12 +1263,8 @@ msgid "복구하기"
 msgstr "복구하기"
 
 #: pages/kboard_backup.php:40
-msgid ""
-"xml 파일을 선택하고 복구하기 버튼을 누르세요. 지금까지의 데이터는 삭제되고 복"
-"원파일 데이터를 입력합니다."
-msgstr ""
-"xml 파일을 선택하고 복구하기 버튼을 누르세요. 지금까지의 데이터는 삭제되고 복"
-"원파일 데이터를 입력합니다."
+msgid "xml 파일을 선택하고 복구하기 버튼을 누르세요. 지금까지의 데이터는 삭제되고 복원파일 데이터를 입력합니다."
+msgstr "xml 파일을 선택하고 복구하기 버튼을 누르세요. 지금까지의 데이터는 삭제되고 복원파일 데이터를 입력합니다."
 
 #: pages/kboard_backup.php:45
 msgid "Attachments"
@@ -1278,11 +1272,11 @@ msgstr "첨부 파일"
 
 #: pages/kboard_backup.php:47
 msgid ""
-"<code>/wp-content/uploads/kboard_attached</code> 이 경로의 모든 파일을 FTP를 "
-"사용해서 다운로드받아 옮겨주세요."
+"<code>/wp-content/uploads/kboard_attached</code> 이 경로의 모든 파일을 FTP를 사용해서 "
+"다운로드받아 옮겨주세요."
 msgstr ""
-"<code>/wp-content/uploads/kboard_attached</code> 이 경로의 모든 파일을 FTP를 "
-"사용해서 다운로드받아 옮겨주세요."
+"<code>/wp-content/uploads/kboard_attached</code> 이 경로의 모든 파일을 FTP를 사용해서 "
+"다운로드받아 옮겨주세요."
 
 #: pages/kboard_content_list.php:4
 msgid "KBoard : 전체 게시글"
@@ -1674,225 +1668,3 @@ msgstr "서버와 네트워크 연결 불안정합니다. 다시 업로드를 �
 #: template/media.php:206 template/media.php:221 template/media.php:272
 msgid "이미지 파일만 업로드 가능합니다."
 msgstr "이미지 파일만 업로드 가능합니다."
-
-#~ msgid "Color Select"
-#~ msgstr "색상 선택"
-
-#~ msgid "Temporary save"
-#~ msgstr "임시저장"
-
-#~ msgid "KBoard 미디어 추가"
-#~ msgstr "KBoard 미디어 추가"
-
-#~ msgid "Success!"
-#~ msgstr "성공!"
-
-#~ msgid "There was an error unzipping the file."
-#~ msgstr "파일을 압축 해제하는 중 오류가 발생했습니다."
-
-#~ msgid "설치된 게시판 플러그인 버전"
-#~ msgstr "설치된 게시판 플러그인 버전"
-
-#~ msgid "최신"
-#~ msgstr "최신"
-
-#~ msgid "변경사항"
-#~ msgstr "변경사항"
-
-#~ msgid "설치된 댓글 플러그인 버전"
-#~ msgstr "설치된 댓글 플러그인 버전"
-
-#~ msgid "Your Message"
-#~ msgstr "메시지"
-
-#~ msgid ""
-#~ "Download file is decompression failed, please check directory and file "
-#~ "permissions."
-#~ msgstr "다운로드 파일 압축 해제 실패, 디렉토리 및 파일 권한을 확인하십시오."
-
-#~ msgid "File copy failed, directory requires write permission."
-#~ msgstr "파일 복사 실패, 디렉토리에 쓰기 권한이 필요합니다."
-
-#~ msgid "Please enter the content."
-#~ msgstr "내용을 입력해주세요."
-
-#~ msgid "Free item"
-#~ msgstr "무료"
-
-#~ msgid "Ask a question"
-#~ msgstr "질문하기"
-
-#~ msgid "Your changes could not be saved."
-#~ msgstr "변경사항이 저장되지 않을 수 있습니다."
-
-#~ msgid "WordPress KBoard feed"
-#~ msgstr "워드프레스 KBoard 피드"
-
-#~ msgid "Unable to connect to Cosmosfarm server."
-#~ msgstr "코스모스팜 서버에 접속할 수 없습니다."
-
-#~ msgid "The CAPTCHA code is not valid. Please enter the CAPTCHA code."
-#~ msgstr "보안코드가 올바르지 않습니다. 보안 코드를 입력해주세요."
-
-#~ msgid "관리 권한이 없습니다."
-#~ msgstr "관리 권한이 없습니다."
-
-#~ msgid "게시물 표시"
-#~ msgstr "게시물 표시"
-
-#~ msgid "생성일자"
-#~ msgstr "생성일자"
-
-#~ msgid "답글입니다."
-#~ msgstr "답글입니다."
-
-#~ msgid "게시판"
-#~ msgstr "게시판"
-
-#~ msgid "제목/내용"
-#~ msgstr "제목/내용"
-
-#~ msgid "작성자"
-#~ msgstr "작성자"
-
-#~ msgid "조회수"
-#~ msgstr "조회수"
-
-#~ msgid "비밀글"
-#~ msgstr "비밀글"
-
-#~ msgid "공지사항"
-#~ msgstr "공지사항"
-
-#~ msgid "작성일"
-#~ msgstr "작성일"
-
-#~ msgid "게시판 변경"
-#~ msgstr "게시판 변경"
-
-#~ msgid "Open"
-#~ msgstr "페이지 열기"
-
-#~ msgid "예"
-#~ msgstr "예"
-
-#~ msgid "아니오"
-#~ msgstr "아니오"
-
-#~ msgid "다음 페이지에서 게시판과 댓글 플러그인 모두를 업데이트해주세요."
-#~ msgstr "다음 페이지에서 게시판과 댓글 플러그인 모두를 업데이트해주세요."
-
-#~ msgid "KBoard 게시판 설치도구 플러그인을 먼저 설치해주세요."
-#~ msgstr "KBoard 게시판 설치도구 플러그인을 먼저 설치해주세요."
-
-#~ msgid "새창열기"
-#~ msgstr "새창열기"
-
-#~ msgid "검색"
-#~ msgstr "검색"
-
-#~ msgid ""
-#~ "<code>/wp-content/uploads/kboard_attached</code> 경로의 모든 파일을 FTP를 "
-#~ "사용해서 다운로드받아 옮겨주세요."
-#~ msgstr ""
-#~ "<code>/wp-content/uploads/kboard_attached</code> 경로의 모든 파일을 FTP를 "
-#~ "사용해서 다운로드받아 옮겨주세요."
-
-#~ msgid ""
-#~ "/wp-content/uploads/kboard_attached 경로의 모든 파일을 FTP로 다운로드받아 "
-#~ "옮겨주세요."
-#~ msgstr ""
-#~ "/wp-content/uploads/kboard_attached 경로의 모든 파일을 FTP로 다운로드받아 "
-#~ "옮겨주세요."
-
-#~ msgid "게시글이 없습니다."
-#~ msgstr "게시글이 없습니다."
-
-#~ msgid "최신글 뷰가 없습니다."
-#~ msgstr "최신글 뷰가 없습니다."
-
-#~ msgid "게시판이 없습니다."
-#~ msgstr "게시판이 없습니다."
-
-#~ msgid "Vote"
-#~ msgstr "추천"
-
-#~ msgid "홈페이지"
-#~ msgstr "홈페이지"
-
-#~ msgid "커뮤니티"
-#~ msgstr "커뮤니티"
-
-#~ msgid "고객지원"
-#~ msgstr "고객지원"
-
-#~ msgid "블로그"
-#~ msgstr "블로그"
-
-#~ msgid "다음"
-#~ msgstr "다음"
-
-#~ msgid "이전"
-#~ msgstr "이전"
-
-#~ msgid "WordPress"
-#~ msgstr "워드프레스"
-
-#~ msgid "No backup privilege."
-#~ msgstr "백업 권한이 없습니다."
-
-#, fuzzy
-#~ msgid "No document UID."
-#~ msgstr "글이 없습니다."
-
-#, fuzzy
-#~ msgid "No UID of comments."
-#~ msgstr "글이 없습니다."
-
-#, fuzzy
-#~ msgid "Total Reply"
-#~ msgstr "답글쓰기"
-
-#, fuzzy
-#~ msgid "Cancel"
-#~ msgstr "취소"
-
-#, fuzzy
-#~ msgid "It is a comment does not exist."
-#~ msgstr "게시판 아이디가 없습니다."
-
-#, fuzzy
-#~ msgid "Password confirmation"
-#~ msgstr "비밀번호 확인"
-
-#~ msgid "Language"
-#~ msgstr "언어"
-
-#~ msgid "The Best of WordPress Board"
-#~ msgstr "의미있는 워드프레스 게시판"
-
-#~ msgid "Title and content searchable"
-#~ msgstr "제목과 내용 검색허용"
-
-#~ msgid "Back to top"
-#~ msgstr "뒤로가기"
-
-#~ msgid "It is the wrong approach."
-#~ msgstr "잘못된 접근입니다."
-
-#~ msgid "You will need to login."
-#~ msgstr "로그인 하셔야 사용할 수 있습니다."
-
-#~ msgid "Update the server connection fails, please reconnect the Cosmosfarm."
-#~ msgstr "업데이트 서버 연결 실패, 코스모스팜 계정을 다시 연결해 주세요."
-
-#~ msgid ""
-#~ "Failure to decompress the file, check the permissions of directories and "
-#~ "files."
-#~ msgstr "파일 압축 해제 실패, 디렉토리 및 파일의 권한을 확인하세요."
-
-#~ msgid "File copy failed"
-#~ msgstr "파일 복사 실패"
-
-#~ msgid "Must have write permissions in the directory."
-#~ msgstr "디렉토리에 쓰기 권한이 있어야 합니다."

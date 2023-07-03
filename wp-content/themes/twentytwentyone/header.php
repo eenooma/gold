@@ -97,7 +97,7 @@
 					</ul>
 				</li>	  
 
-				<li><a href="/온라인-매입신청">온라인 매입신청</a><li>
+				<li class="has-children"><a href="/온라인-매입신청">온라인 매입신청</a></li>
 				
 				<li class="has-children"><a href="/문의게시판">문의게시판</a></li>	           
 
