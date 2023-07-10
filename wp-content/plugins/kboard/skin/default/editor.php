@@ -17,7 +17,11 @@
 			</div>
 			<div class="right">
 				<?php if($board->isWriter()):?>
+				<?php if($board->id == '1'):?>
+				<button type="submit" class="kboard-default-button-small icon_01"><?php echo __('Save', 'kboard')?></button>
+				<?php else:?>
 				<button type="submit" class="kboard-default-button-small"><?php echo __('Save', 'kboard')?></button>
+				<?php endif?>
 				<?php endif?>
 			</div>
 		</div>

@@ -50,6 +50,9 @@
 						<a href="/택배매입신청">택배매입신청
 							<div class="depth-warp">
 								<ul class="depth02">
+									<li><a href="/택배매입신청">택배매입신청</a></li>
+								</ul>
+								<ul class="depth02">
 									<li><a href="/수령확인-동영상">수령확인 동영상</a></li>
 								</ul>
 							</div>
@@ -57,7 +60,7 @@
 					</li>
 
 					<li class="title">
-						<a href="/온라인-매입신청">온라인 매입신청</a>
+						<a href="/온라인-매입현황">온라인 매입현황</a>
 					</li>
 
 					<li class="title">
@@ -91,13 +94,14 @@
 
 				<li class="has-children"><a href="/회사소개">회사소개</a></li>		
 
-				<li class="has-children"><a href="/택배매입신청">택배매입신청</a><span class="icon-arrow"></span>
+				<li class="has-children">택배매입신청<span class="icon-arrow"></span>
 					<ul class="children">
+						<li><a href="/택배매입신청">택배매입신청</a></li>
 						<li><a href="/수령확인-동영상">수령확인 동영상</a></li>
 					</ul>
 				</li>	  
 
-				<li class="has-children"><a href="/온라인-매입신청">온라인 매입신청</a></li>
+				<li class="has-children"><a href="/온라인-매입현황">온라인 매입현황</a></li>
 				
 				<li class="has-children"><a href="/문의게시판">문의게시판</a></li>	           
 

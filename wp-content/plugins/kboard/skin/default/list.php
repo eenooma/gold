@@ -164,7 +164,11 @@
 	<?php if($board->isWriter()):?>
 	<!-- 버튼 시작 -->
 	<div class="kboard-control">
+		<?php if($board->id == '1'):?>
+		<a href="<?php echo esc_url($url->getContentEditor())?>" class="kboard-default-button-small icon_01"><?php echo __('New', 'kboard')?></a>
+		<?php else:?>
 		<a href="<?php echo esc_url($url->getContentEditor())?>" class="kboard-default-button-small"><?php echo __('New', 'kboard')?></a>
+		<?php endif?>
 	</div>
 	<!-- 버튼 끝 -->
 	<?php endif?>

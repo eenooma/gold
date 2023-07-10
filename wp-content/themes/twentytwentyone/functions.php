@@ -737,35 +737,80 @@ function my_board_view($args) {
 				<li>
 					<span class="product"><?php echo $content->option->row['key1']?></span>
 					<span class="yesterday"><?php echo $content->option->row['before_value1']?></span>
-					<span class="today"><?php echo $content->option->row['value1']?></span>
+					<span class="today"><?php echo $content->option->row['value1']?>
+						<?php $val1 = preg_replace('/[^0-9]*/s', '', $content->option->row['value1']) - preg_replace('/[^0-9]*/s', '', $content->option->row['before_value1'])?>
+						(<?php if($val1 == 0):?>
+							-
+						<?php elseif($val1 > 0):?>
+							<img src="/wp-content/themes/twentytwentyone/images/up.jpeg" alt="">
+						<?php else:?>
+							<img src="/wp-content/themes/twentytwentyone/images/down.jpeg" alt="">
+						<?php endif?>)
+					</span>
 				</li>							
 				<?php endif?>
 				<?php if($content->option->row['key2']): ?>
 				<li>
 					<span class="product"><?php echo $content->option->row['key2']?></span>
 					<span class="yesterday"><?php echo $content->option->row['before_value2']?></span>
-					<span class="today"><?php echo $content->option->row['value2']?></span>
+					<span class="today"><?php echo $content->option->row['value2']?>
+						<?php $val2 = preg_replace('/[^0-9]*/s', '', $content->option->row['value2']) - preg_replace('/[^0-9]*/s', '', $content->option->row['before_value2'])?>
+						(<?php if($val2 == 0):?>
+							-
+						<?php elseif($val2 > 0):?>
+							<img src="/wp-content/themes/twentytwentyone/images/up.jpeg" alt="">
+						<?php else:?>
+							<img src="/wp-content/themes/twentytwentyone/images/down.jpeg" alt="">
+						<?php endif?>)
+					</span>
 				</li>							
 				<?php endif?>
 				<?php if($content->option->row['key3']): ?>
 				<li>
 					<span class="product"><?php echo $content->option->row['key3']?></span>
 					<span class="yesterday"><?php echo $content->option->row['before_value3']?></span>
-					<span class="today"><?php echo $content->option->row['value3']?></span>
+					<span class="today"><?php echo $content->option->row['value3']?>
+						<?php $val3 = preg_replace('/[^0-9]*/s', '', $content->option->row['value3']) - preg_replace('/[^0-9]*/s', '', $content->option->row['before_value3'])?>
+						(<?php if($val3 == 0):?>
+							-
+						<?php elseif($val3 > 0):?>
+							<img src="/wp-content/themes/twentytwentyone/images/up.jpeg" alt="">
+						<?php else:?>
+							<img src="/wp-content/themes/twentytwentyone/images/down.jpeg" alt="">
+						<?php endif?>)
+					</span>
 				</li>							
 				<?php endif?>
 				<?php if($content->option->row['key4']): ?>
 				<li>
 					<span class="product"><?php echo $content->option->row['key4']?></span>
 					<span class="yesterday"><?php echo $content->option->row['before_value4']?></span>
-					<span class="today"><?php echo $content->option->row['value4']?></span>
+					<span class="today"><?php echo $content->option->row['value4']?>
+						<?php $val4 = preg_replace('/[^0-9]*/s', '', $content->option->row['value4']) - preg_replace('/[^0-9]*/s', '', $content->option->row['before_value4'])?>
+						(<?php if($val4 == 0):?>
+							-
+						<?php elseif($val4 > 0):?>
+							<img src="/wp-content/themes/twentytwentyone/images/up.jpeg" alt="">
+						<?php else:?>
+							<img src="/wp-content/themes/twentytwentyone/images/down.jpeg" alt="">
+						<?php endif?>)
+					</span>
 				</li>							
 				<?php endif?>
 				<?php if($content->option->row['key5']): ?>
 				<li>
 					<span class="product"><?php echo $content->option->row['key5']?></span>
 					<span class="yesterday"><?php echo $content->option->row['before_value5']?></span>
-					<span class="today"><?php echo $content->option->row['value5']?></span>
+					<span class="today"><?php echo $content->option->row['value5']?>
+						<?php $val5 = preg_replace('/[^0-9]*/s', '', $content->option->row['value5']) - preg_replace('/[^0-9]*/s', '', $content->option->row['before_value5'])?>
+						(<?php if($val5 == 0):?>
+							-
+						<?php elseif($val5 > 0):?>
+							<img src="/wp-content/themes/twentytwentyone/images/up.jpeg" alt="">
+						<?php else:?>
+							<img src="/wp-content/themes/twentytwentyone/images/down.jpeg" alt="">
+						<?php endif?>)
+					</span>
 				</li>							
 				<?php endif?>
 			</ul>
