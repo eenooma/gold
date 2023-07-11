@@ -676,6 +676,24 @@ function my_kboard_skin_fields($fields, $board){
                 'close_button' => 'yes'
             );
         }
+        if(!isset($fields['status'])){
+			$fields['status'] = array(
+				'field_type' => 'status',
+                'field_label' => '접수상태',
+                'class' => 'kboard-attr-select',
+                'hidden' => '',
+                'meta_key' => '',
+                'field_name' => '',
+				'permission' => '',
+                'roles' => array('administrator', 'editor'),
+                'default_value' => '',
+                'placeholder' => '',
+                'required' => '',
+                'show_document' => '',
+                'description' => '',
+                'close_button' => 'yes'
+            );
+        }
     }
     
     return $fields;
@@ -704,6 +722,33 @@ function my_kboard_get_template_field_html($field_html, $field, $content, $board
                 </div>
             </div>
         </div>
+        <?php
+        $field_html = ob_get_clean();
+    }
+	if($field['field_type'] == 'status'){
+		$meta_key = esc_attr($field['meta_key']);
+        ob_start();
+        ?>
+		<?php if($board->isAdmin()):?>
+		<div class="kboard-attr-row meta-key-<?php echo esc_attr($field['meta_key'])?> required">
+			<label class="attr-name" for="status">
+                <span class="field-name"><?php echo esc_html($field['field_name'] ? $field['field_name'] : $field['field_label'])?></span>
+			</label>
+			<div class="attr-value">
+				<select id="status" name="kboard_option_<?php echo esc_attr($field['meta_key'])?>" class="required">
+					<?php if($content->option->{$meta_key}):?>
+					<option value="매입접수" <?php if($board->fields()->isSavedOption($content->option->{$meta_key}, "매입접수")):?> selected<?php endif?>>매입접수</option>
+					<option value="매입완료" <?php if($board->fields()->isSavedOption($content->option->{$meta_key}, "매입완료")):?> selected<?php endif?>>매입완료</option>
+					<?php else:?>
+					<option value="매입접수" selected>매입접수</option>
+					<option value="매입완료">매입완료</option>
+					<?php endif?>
+				</select>
+			</div>
+		</div>
+		<?php else:?>
+		<input type="hidden" id="status" name="kboard_option_<?php echo esc_attr($field['meta_key'])?>" value="<?php echo $content->option->{$meta_key}?$content->option->{$meta_key}:"매입접수"?>">
+		<?php endif?>
         <?php
         $field_html = ob_get_clean();
     }
