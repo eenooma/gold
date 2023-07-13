@@ -718,7 +718,7 @@ function my_kboard_get_template_field_html($field_html, $field, $content, $board
                 </div>
                 <div style="text-align:center;">
                     <input type="hidden" class="required" name="kboard_option_<?php echo esc_attr($field['meta_key'])?>" value="1">
-                    <label><input type="checkbox" class="required" name="kboard_option_<?php echo esc_attr($field['meta_key'])?>" value="1"> 개인정보 제공 및 활용에 동의합니다.</label>
+                    <label><input type="checkbox" class="required" name="kboard_option_<?php echo esc_attr($field['meta_key'])?>" value="1" <?php if($board->isAdmin()):?>checked<?php endif?>> 개인정보 제공 및 활용에 동의합니다.</label>
                 </div>
             </div>
         </div>
